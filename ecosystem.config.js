@@ -3,6 +3,8 @@ module.exports = {
     {
       name: "test-pm2",
       script: "bin/www",
+      instances : "4",
+      exec_mode : "cluster"
     },
   ],
   deploy: {
