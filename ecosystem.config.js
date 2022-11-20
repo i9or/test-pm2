@@ -13,7 +13,7 @@ module.exports = {
       ref: "origin/main",
       repo: "https://github.com/i9or/test-pm2.git",
       path: "/home/deploy/app",
-      "post-deploy": "npm i",
+      "post-deploy": "npm ci --production",
     },
   },
 };
