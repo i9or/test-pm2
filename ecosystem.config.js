@@ -13,7 +13,7 @@ module.exports = {
       ref: "origin/main",
       repo: "https://github.com/i9or/test-pm2.git",
       path: "/home/deploy/app",
-      "post-deploy": "npm ci --production && pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "npm ci --production && pm2 startOrRestart ecosystem.config.js --env production",
     },
   },
 };
